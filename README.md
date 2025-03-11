@@ -381,8 +381,8 @@ rtt min/avg/max/mdev = 1.867/3.787/5.708/1.920 ms
 </details>
     
     
-*	У всех новых серверов отключить дефолт на NAT (eth0), который vagrant поднимает для связи
-
+* **У всех новых серверов отключить дефолт на NAT (eth0), который vagrant поднимает для связи**    
+    
 <details>
 <summary>Выполнено в рамках Ansible Playbook: ansible/provision.yml</summary>
 
@@ -397,7 +397,10 @@ rtt min/avg/max/mdev = 1.867/3.787/5.708/1.920 ms
       mode: 0644
     when: (ansible_hostname != "inetRouter")
 ```
-</details>
+</details>    
     
-*	Добавить дополнительные сетевые интерфейсы, если потребуется
-
+* **Добавить дополнительные сетевые интерфейсы, если потребуется**
+    
+Были добавлены сети для связи между centralRouter и office1Router, office2Router: 
+* 192.168.255.4/30
+* 192.168.255.8/30    
