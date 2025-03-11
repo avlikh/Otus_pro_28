@@ -239,7 +239,7 @@ ansible-playbook provision.yml
 
 *	**Соединить офисы в сеть согласно логической схеме и настроить роутинг:**
     
-Выполнено средствами Vagrant и Ansible (содержимо Vagrantfile и Ansible содержится в файлах данного проекта на Github)     
+Выполнено средствами Vagrant и Ansible (содержимое Vagrantfile и Ansible содержится в файлах данного проекта на Github https://github.com/avlikh/Otus_pro_28)     
      
 *	**Интернет-трафик со всех серверов должен ходить через inetRouter**
 
